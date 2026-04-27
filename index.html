@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💡 AI Content Ideator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        .cta-button { display: inline-block; background-color: #6366F1; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: bold; transition: background-color 0.2s; }
+        .cta-button:hover { background-color: #4F46E5; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="container flex flex-col items-center justify-center min-h-screen text-center">
+        <h1 class="text-5xl font-extrabold mb-4 text-gray-900">💡 Unlock Fresh Content Ideas Instantly</h1>
+        <p class="text-xl text-gray-600 mb-8">Struggling with content?<br>Enter a keyword, get 5 unique content angles powered by AI.</p>
+        <form action="/api/checkout" method="POST">
+            <input type="hidden" name="priceId" value="price_12345" />
+            <button type="submit" class="cta-button">
+                Get Your Idea Generator Now - $9.99 One-Time
+            </button>
+        </form>
+        <div class="mt-12 p-6 bg-white rounded-lg shadow-md w-full max-w-md text-left">
+            <p class="font-semibold text-lg mb-2">How it works:</p>
+            <ul class="list-disc list-inside text-gray-700">
+                <li><span class="font-medium">1. Pay Once:</span> Secure one-time access.</li>
+                <li><span class="font-medium">2. Enter Keyword:</span> Type your topic or industry.</li>
+                <li><span class="font-medium">3. Get Ideas:</span> Receive 5 AI-generated content ideas.</li>
+                <li><span class="font-medium">No subscriptions, no accounts. Just results.</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
